@@ -21,17 +21,17 @@ const SearchBar = ({
     }
   };
 
-  return (
+return (
     <div className={`relative ${className}`}>
       <motion.div
         animate={{ width: isExpanded ? '100%' : 'auto' }}
-        className="relative"
+        className="relative group"
       >
         <div className="relative">
           <ApperIcon 
             name="Search" 
             size={18} 
-            className="absolute left-3 top-1/2 -translate-y-1/2 text-neutral-400" 
+            className="absolute left-4 top-1/2 -translate-y-1/2 text-neutral-400 group-focus-within:text-primary-500 transition-colors duration-300" 
           />
           <input
             type="text"
@@ -40,7 +40,7 @@ const SearchBar = ({
             onFocus={() => setIsExpanded(true)}
             onBlur={() => setIsExpanded(false)}
             placeholder={placeholder}
-            className="input-field pl-10 pr-4 w-full min-w-[280px]"
+            className="input-field pl-12 pr-4 w-full min-w-[320px] shadow-sm hover:shadow-md focus:shadow-lg transition-shadow duration-300"
           />
         </div>
       </motion.div>

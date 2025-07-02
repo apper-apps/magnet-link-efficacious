@@ -27,11 +27,11 @@ const Header = ({ onMenuToggle, showMenuButton = true }) => {
     setIsDark(!isDark);
   };
 
-  return (
+return (
     <motion.header
       initial={{ y: -10, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      className="sticky top-0 z-30 bg-white/80 dark:bg-neutral-900/80 backdrop-blur-lg border-b border-neutral-200/50 dark:border-neutral-800/50"
+      className="sticky top-0 z-30 bg-white/60 dark:bg-neutral-900/60 backdrop-blur-xl border-b border-neutral-200/30 dark:border-neutral-800/30 shadow-sm"
     >
       <div className="flex items-center justify-between px-6 py-4">
         <div className="flex items-center gap-4">
@@ -46,7 +46,7 @@ const Header = ({ onMenuToggle, showMenuButton = true }) => {
           )}
           
           <div className="hidden sm:block">
-            <h2 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
+            <h2 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100">
               Welcome back
             </h2>
             <p className="text-sm text-neutral-600 dark:text-neutral-400">
@@ -58,32 +58,32 @@ const Header = ({ onMenuToggle, showMenuButton = true }) => {
         <div className="flex items-center gap-3">
           {/* Notifications */}
           <motion.button
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.05, y: -1 }}
             whileTap={{ scale: 0.95 }}
-            className="relative p-2 rounded-lg bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors"
+            className="relative p-3 rounded-xl bg-white/80 dark:bg-neutral-800/80 backdrop-blur-sm border border-neutral-200/50 dark:border-neutral-700/50 hover:bg-primary-50/80 dark:hover:bg-primary-900/20 hover:border-primary-200/60 dark:hover:border-primary-700/60 transition-all duration-300 shadow-sm hover:shadow-md"
           >
-            <ApperIcon name="Bell" size={20} className="text-neutral-600 dark:text-neutral-400" />
-            <span className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full animate-pulse-glow"></span>
+            <ApperIcon name="Bell" size={18} className="text-neutral-600 dark:text-neutral-400" />
+            <div className="notification-dot absolute -top-1 -right-1"></div>
           </motion.button>
 
           {/* Theme Toggle */}
           <motion.button
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.05, y: -1 }}
             whileTap={{ scale: 0.95 }}
             onClick={toggleTheme}
-            className="p-2 rounded-lg bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors"
+            className="p-3 rounded-xl bg-white/80 dark:bg-neutral-800/80 backdrop-blur-sm border border-neutral-200/50 dark:border-neutral-700/50 hover:bg-primary-50/80 dark:hover:bg-primary-900/20 hover:border-primary-200/60 dark:hover:border-primary-700/60 transition-all duration-300 shadow-sm hover:shadow-md"
           >
             <motion.div
               initial={false}
               animate={{
                 rotate: isDark ? 180 : 0,
-                scale: isDark ? 0.8 : 1
+                scale: isDark ? 0.9 : 1
               }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.5, type: "spring", stiffness: 200 }}
             >
               <ApperIcon 
                 name={isDark ? "Moon" : "Sun"} 
-                size={20} 
+                size={18} 
                 className="text-neutral-600 dark:text-neutral-400" 
               />
             </motion.div>
@@ -91,10 +91,11 @@ const Header = ({ onMenuToggle, showMenuButton = true }) => {
 
           {/* User Menu */}
           <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="flex items-center gap-3 p-2 rounded-lg bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors cursor-pointer"
+            whileHover={{ scale: 1.02, y: -1 }}
+            whileTap={{ scale: 0.98 }}
+            className="flex items-center gap-3 p-2 pr-4 rounded-xl bg-white/80 dark:bg-neutral-800/80 backdrop-blur-sm border border-neutral-200/50 dark:border-neutral-700/50 hover:bg-primary-50/80 dark:hover:bg-primary-900/20 hover:border-primary-200/60 dark:hover:border-primary-700/60 transition-all duration-300 cursor-pointer shadow-sm hover:shadow-md"
           >
-            <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center">
+            <div className="w-9 h-9 bg-gradient-to-br from-primary-500 via-primary-600 to-secondary-500 rounded-xl flex items-center justify-center shadow-lg shadow-primary-500/25">
               <ApperIcon name="User" size={16} className="text-white" />
             </div>
             <div className="hidden sm:block text-left">

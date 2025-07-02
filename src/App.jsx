@@ -20,16 +20,16 @@ function App() {
     setSidebarCollapsed(!sidebarCollapsed);
   };
 
-  return (
+return (
     <Router>
-      <div className="flex h-screen bg-surface-50 dark:bg-neutral-900">
+      <div className="flex h-screen bg-gradient-to-br from-neutral-50 via-neutral-50/80 to-neutral-100/60 dark:from-neutral-950 dark:via-neutral-900/90 dark:to-neutral-900/60">
         <Sidebar collapsed={sidebarCollapsed} onToggle={toggleSidebar} />
         
         <div className="flex-1 flex flex-col overflow-hidden">
           <Header onMenuToggle={toggleSidebar} />
           
           <main className="flex-1 overflow-y-auto">
-            <div className="p-6">
+            <div className="p-6 lg:p-8">
               <Routes>
                 <Route path="/" element={<Dashboard />} />
                 <Route path="/links" element={<Links />} />
