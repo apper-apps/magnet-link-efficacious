@@ -1,0 +1,42 @@
+[
+  {
+    "Id": 1,
+    "name": "John Doe",
+    "email": "john@example.com",
+    "role": "owner",
+    "status": "active",
+    "avatar": null,
+    "lastActive": "2024-01-20T15:30:00Z",
+    "invitedAt": "2024-01-01T00:00:00Z"
+  },
+  {
+    "Id": 2,
+    "name": "Sarah Wilson",
+    "email": "sarah@example.com",
+    "role": "admin",
+    "status": "active",
+    "avatar": null,
+    "lastActive": "2024-01-19T14:20:00Z",
+    "invitedAt": "2024-01-05T10:30:00Z"
+  },
+  {
+    "Id": 3,
+    "name": "Mike Johnson",
+    "email": "mike@example.com",
+    "role": "editor",
+    "status": "pending",
+    "avatar": null,
+    "lastActive": null,
+    "invitedAt": "2024-01-18T16:45:00Z"
+  },
+  {
+    "Id": 4,
+    "name": "Lisa Chen",
+    "email": "lisa@example.com",
+    "role": "viewer",
+    "status": "active",
+    "avatar": null,
+    "lastActive": "2024-01-18T09:15:00Z",
+    "invitedAt": "2024-01-10T14:20:00Z"
+  }
+]

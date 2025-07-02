@@ -1,0 +1,96 @@
+[
+  {
+    "Id": 1,
+    "linkId": 1,
+    "data": {
+      "name": "John Smith",
+      "email": "john.smith@example.com",
+      "company": "Tech Solutions Inc"
+    },
+    "source": "direct",
+    "createdAt": "2024-01-20T15:30:00Z",
+    "tags": ["premium", "enterprise"]
+  },
+  {
+    "Id": 2,
+    "linkId": 1,
+    "data": {
+      "name": "Sarah Johnson",
+      "email": "sarah.j@gmail.com",
+      "company": "Marketing Pro"
+    },
+    "source": "twitter",
+    "createdAt": "2024-01-20T14:15:00Z",
+    "tags": ["marketing"]
+  },
+  {
+    "Id": 3,
+    "linkId": 2,
+    "data": {
+      "name": "Mike Wilson",
+      "email": "mike.wilson@company.com"
+    },
+    "source": "linkedin",
+    "createdAt": "2024-01-20T12:45:00Z",
+    "tags": []
+  },
+  {
+    "Id": 4,
+    "linkId": 3,
+    "data": {
+      "name": "Emily Davis",
+      "email": "emily.davis@startup.co",
+      "company": "Startup Co"
+    },
+    "source": "facebook",
+    "createdAt": "2024-01-19T16:20:00Z",
+    "tags": ["startup", "saas"]
+  },
+  {
+    "Id": 5,
+    "linkId": 1,
+    "data": {
+      "name": "Robert Brown",
+      "email": "robert.brown@enterprise.com",
+      "company": "Enterprise Corp"
+    },
+    "source": "email",
+    "createdAt": "2024-01-19T10:30:00Z",
+    "tags": ["enterprise", "premium"]
+  },
+  {
+    "Id": 6,
+    "linkId": 4,
+    "data": {
+      "name": "Lisa Garcia",
+      "email": "lisa.garcia@agency.com",
+      "company": "Creative Agency"
+    },
+    "source": "direct",
+    "createdAt": "2024-01-18T14:45:00Z",
+    "tags": ["agency", "creative"]
+  },
+  {
+    "Id": 7,
+    "linkId": 2,
+    "data": {
+      "name": "David Lee",
+      "email": "david.lee@consultant.com"
+    },
+    "source": "google",
+    "createdAt": "2024-01-18T11:20:00Z",
+    "tags": ["consultant"]
+  },
+  {
+    "Id": 8,
+    "linkId": 5,
+    "data": {
+      "name": "Jennifer Taylor",
+      "email": "jen.taylor@freelance.com",
+      "company": "Freelance Design"
+    },
+    "source": "instagram",
+    "createdAt": "2024-01-17T13:10:00Z",
+    "tags": ["freelancer", "design"]
+  }
+]

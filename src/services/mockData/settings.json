@@ -1,0 +1,26 @@
+{
+  "profile": {
+    "name": "John Doe",
+    "email": "john@example.com", 
+    "company": "Magnet.Link",
+    "website": "https://magnet.link",
+    "timezone": "UTC"
+  },
+  "branding": {
+    "primaryColor": "#6750A4",
+    "logo": "",
+    "customDomain": "",
+    "favicon": ""
+  },
+  "notifications": {
+    "emailAlerts": true,
+    "weeklyReports": true,
+    "newLeads": true,
+    "linkExpiry": false
+  },
+  "privacy": {
+    "dataRetention": "12months",
+    "analyticsTracking": true,
+    "cookieConsent": true
+  }
+}

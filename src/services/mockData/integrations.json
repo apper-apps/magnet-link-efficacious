@@ -1,0 +1,92 @@
+{
+  "available": [
+    {
+      "Id": 1,
+      "name": "Mailchimp",
+      "category": "email",
+      "description": "Connect with Mailchimp to automatically add leads to your email lists",
+      "logo": "/integrations/mailchimp.png",
+      "icon": "Mail",
+      "isPopular": true,
+      "features": ["Auto-sync leads", "Segmentation", "Campaigns"]
+    },
+    {
+      "Id": 2,
+      "name": "HubSpot",
+      "category": "crm",
+      "description": "Sync leads directly to your HubSpot CRM for complete lead management", 
+      "logo": "/integrations/hubspot.png",
+      "icon": "Users",
+      "isPopular": true,
+      "features": ["CRM sync", "Lead scoring", "Automation"]
+    },
+    {
+      "Id": 3,
+      "name": "Slack",
+      "category": "communication",
+      "description": "Get instant notifications in Slack when new leads are captured",
+      "logo": "/integrations/slack.png",
+      "icon": "MessageSquare",
+      "isPopular": true,
+      "features": ["Real-time alerts", "Channel notifications", "Custom messages"]
+    },
+    {
+      "Id": 4,
+      "name": "Google Analytics",
+      "category": "analytics",
+      "description": "Track form submissions and conversions in Google Analytics",
+      "logo": "/integrations/google-analytics.png",
+      "icon": "BarChart3",
+      "isPopular": false,
+      "features": ["Event tracking", "Conversion goals", "Custom dimensions"]
+    },
+    {
+      "Id": 5,
+      "name": "ConvertKit",
+      "category": "email",
+      "description": "Add subscribers to ConvertKit sequences and automate your email marketing",
+      "logo": "/integrations/convertkit.png",
+      "icon": "Mail",
+      "isPopular": false,
+      "features": ["Sequences", "Tags", "Custom fields"]
+    },
+    {
+      "Id": 6,
+      "name": "Salesforce",
+      "category": "crm",
+      "description": "Create leads and contacts directly in your Salesforce organization",
+      "logo": "/integrations/salesforce.png",
+      "icon": "Users",
+      "isPopular": false,
+      "features": ["Lead creation", "Contact sync", "Custom objects"]
+    },
+    {
+      "Id": 7,
+      "name": "Discord",
+      "category": "communication",
+      "description": "Post new lead notifications to your Discord server channels",
+      "logo": "/integrations/discord.png",
+      "icon": "MessageSquare",
+      "isPopular": false,
+      "features": ["Channel webhooks", "Rich embeds", "Role mentions"]
+    },
+    {
+      "Id": 8,
+      "name": "Facebook Pixel",
+      "category": "analytics",
+      "description": "Track conversions and optimize your Facebook advertising campaigns",
+      "logo": "/integrations/facebook.png",
+      "icon": "BarChart3",
+      "isPopular": false,
+      "features": ["Conversion tracking", "Custom events", "Audience building"]
+    }
+  ],
+  "connected": [
+    {
+      "Id": 1,
+      "name": "Mailchimp",
+      "logo": "/integrations/mailchimp.png",
+      "icon": "Mail"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+[
+  {
+    "Id": 1,
+    "name": "Lead Magnet Form",
+    "fields": [
+      {
+        "id": "1",
+        "type": "text",
+        "label": "Full Name",
+        "placeholder": "Enter your full name",
+        "required": true
+      },
+      {
+        "id": "2",
+        "type": "email",
+        "label": "Email Address",
+        "placeholder": "your@email.com",
+        "required": true
+      },
+      {
+        "id": "3",
+        "type": "text",
+        "label": "Company",
+        "placeholder": "Your company name",
+        "required": false
+      }
+    ],
+    "styling": {
+      "primaryColor": "#6750A4",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#1F2937"
+    },
+    "createdAt": "2024-01-15T10:30:00Z"
+  },
+  {
+    "Id": 2,
+    "name": "Newsletter Signup",
+    "fields": [
+      {
+        "id": "1",
+        "type": "text",
+        "label": "First Name",
+        "placeholder": "Enter your first name",
+        "required": true
+      },
+      {
+        "id": "2",
+        "type": "email",
+        "label": "Email Address",
+        "placeholder": "your@email.com",
+        "required": true
+      }
+    ],
+    "styling": {
+      "primaryColor": "#7F67BE",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#1F2937"
+    },
+    "createdAt": "2024-01-10T14:20:00Z"
+  },
+  {
+    "Id": 3,
+    "name": "Contact Form",
+    "fields": [
+      {
+        "id": "1",
+        "type": "text",
+        "label": "Name",
+        "placeholder": "Your name",
+        "required": true
+      },
+      {
+        "id": "2",
+        "type": "email",
+        "label": "Email",
+        "placeholder": "your@email.com",
+        "required": true
+      },
+      {
+        "id": "3",
+        "type": "phone",
+        "label": "Phone Number",
+        "placeholder": "(555) 123-4567",
+        "required": false
+      },
+      {
+        "id": "4",
+        "type": "textarea",
+        "label": "Message",
+        "placeholder": "Tell us how we can help...",
+        "required": true
+      }
+    ],
+    "styling": {
+      "primaryColor": "#6750A4",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#1F2937"
+    },
+    "createdAt": "2024-01-05T16:45:00Z"
+  }
+]

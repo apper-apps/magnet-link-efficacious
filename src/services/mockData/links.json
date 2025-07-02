@@ -1,0 +1,57 @@
+[
+  {
+    "Id": 1,
+    "originalUrl": "https://example.com/ebook-guide",
+    "slug": "ebook-guide",
+    "formId": "1",
+    "createdAt": "2024-01-15T10:30:00Z",
+    "submissions": 156,
+    "isActive": true,
+    "views": 1234,
+    "conversionRate": 12.6
+  },
+  {
+    "Id": 2,
+    "originalUrl": "https://example.com/webinar-signup",
+    "slug": "webinar-signup",
+    "formId": "2",
+    "createdAt": "2024-01-10T14:20:00Z",
+    "submissions": 89,
+    "isActive": true,
+    "views": 892,
+    "conversionRate": 9.9
+  },
+  {
+    "Id": 3,
+    "originalUrl": "https://example.com/free-course",
+    "slug": "free-course",
+    "formId": "1",
+    "createdAt": "2024-01-08T09:15:00Z",
+    "submissions": 234,
+    "isActive": false,
+    "views": 2156,
+    "conversionRate": 10.8
+  },
+  {
+    "Id": 4,
+    "originalUrl": "https://example.com/checklist-pdf",
+    "slug": "checklist-pdf",
+    "formId": "3",
+    "createdAt": "2024-01-05T16:45:00Z",
+    "submissions": 67,
+    "isActive": true,
+    "views": 567,
+    "conversionRate": 11.8
+  },
+  {
+    "Id": 5,
+    "originalUrl": "https://example.com/template-library",
+    "slug": "template-library",
+    "formId": "2",
+    "createdAt": "2024-01-03T11:30:00Z",
+    "submissions": 123,
+    "isActive": true,
+    "views": 1098,
+    "conversionRate": 11.2
+  }
+]

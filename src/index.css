@@ -1,0 +1,154 @@
+@import 'react-toastify/dist/ReactToastify.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    @apply font-body text-neutral-900 dark:text-neutral-100 bg-surface-50 dark:bg-neutral-900;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+    transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-neutral-100 dark:bg-neutral-800;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-neutral-300 dark:bg-neutral-600 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-neutral-400 dark:bg-neutral-500;
+  }
+}
+
+@layer components {
+  /* Glass morphism utility */
+  .glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .glass-dark {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Premium button styles */
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white font-medium px-6 py-3 rounded-xl transition-all duration-200 transform hover:scale-105 hover:shadow-lg active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply bg-white dark:bg-neutral-800 text-primary-600 dark:text-primary-400 border border-primary-200 dark:border-primary-800 font-medium px-6 py-3 rounded-xl transition-all duration-200 transform hover:scale-105 hover:shadow-lg hover:bg-primary-50 dark:hover:bg-primary-900/20 active:scale-95;
+  }
+
+  .btn-ghost {
+    @apply text-neutral-600 dark:text-neutral-400 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-900/20 font-medium px-4 py-2 rounded-lg transition-all duration-200;
+  }
+
+  /* Card styles with elevation */
+  .card {
+    @apply bg-white/80 dark:bg-neutral-800/80 backdrop-blur-glass border border-neutral-200/50 dark:border-neutral-700/50 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+
+  .card-elevated {
+    @apply bg-white dark:bg-neutral-800 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-neutral-100 dark:border-neutral-700;
+  }
+
+  /* Input styles */
+  .input-field {
+    @apply w-full px-4 py-3 bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 text-neutral-900 dark:text-neutral-100 placeholder-neutral-500 dark:placeholder-neutral-400;
+  }
+
+  /* Navigation styles */
+  .nav-item {
+    @apply flex items-center gap-3 px-4 py-3 rounded-xl font-medium transition-all duration-200 hover:bg-primary-50 dark:hover:bg-primary-900/20 hover:text-primary-600 dark:hover:text-primary-400;
+  }
+
+  .nav-item.active {
+    @apply bg-primary-100 dark:bg-primary-900/40 text-primary-700 dark:text-primary-300;
+  }
+
+  /* Skeleton loading */
+  .skeleton {
+    @apply bg-gradient-to-r from-neutral-200 via-neutral-300 to-neutral-200 dark:from-neutral-700 dark:via-neutral-600 dark:to-neutral-700 animate-pulse rounded;
+    background-size: 200% 100%;
+    animation: shimmer 2s linear infinite;
+  }
+
+  /* Form field spacing */
+  .form-field {
+    @apply space-y-2 mb-6;
+  }
+
+  .form-label {
+    @apply block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-2;
+  }
+}
+
+/* Toast customization */
+.Toastify__toast-container {
+  @apply !top-6 !right-6;
+}
+
+.Toastify__toast {
+  @apply !bg-white dark:!bg-neutral-800 !text-neutral-900 dark:!text-neutral-100 !rounded-xl !shadow-xl !border !border-neutral-200 dark:!border-neutral-700;
+  min-height: 56px;
+  padding: 12px 16px;
+}
+
+.Toastify__toast--success {
+  @apply !border-green-200 dark:!border-green-800;
+}
+
+.Toastify__toast--error {
+  @apply !border-red-200 dark:!border-red-800;
+}
+
+.Toastify__toast--warning {
+  @apply !border-orange-200 dark:!border-orange-800;
+}
+
+.Toastify__toast--info {
+  @apply !border-blue-200 dark:!border-blue-800;
+}
+
+.Toastify__progress-bar {
+  @apply !bg-primary-500;
+}
+
+.Toastify__close-button {
+  @apply !text-neutral-400 hover:!text-neutral-600 dark:!text-neutral-500 dark:hover:!text-neutral-300;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .card {
+    @apply rounded-xl;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    @apply px-4 py-2.5 text-sm;
+  }
+}
